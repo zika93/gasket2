@@ -870,10 +870,28 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/home-bg.jpg) no-repeat scroll  center center;
+    background: url(../images/feed.jpg) no-repeat scroll  center center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
+    padding-bottom: 190px;
+    width:100%;
+}
+.home-nobg{
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 190px;
+    width:100%;
+}
+.product{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 190px;
+    width:100%;
+}
+.business{
+    position: relative;
+    padding-top: 200px;
     padding-bottom: 190px;
     width:100%;
 }
@@ -1341,4 +1359,8 @@ work Section style
 .main_footer a {
     color: #ddd;
     padding: 5px;
+}
+
+.no-padding-right{
+    padding-right: unset;
 }
