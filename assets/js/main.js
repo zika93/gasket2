@@ -128,8 +128,8 @@ function laguageChange() {
     }
     else {
         if (currentLanguage == 'en') {
-            document.getElementById('lang_rs').style.display = 'none';
-            document.getElementById('lang_en').style.display = 'block';
+            document.getElementById('lang_rs').style.display = 'block';
+            document.getElementById('lang_en').style.display = 'none';
         }
         else {
             document.getElementById('lang_en').style.display = 'none';
