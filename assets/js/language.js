@@ -106,5 +106,6 @@ function setRS() {
     document.getElementById('lang_en').style.display = 'block';
 }
 
-
-document.addEventListener('build', function (e) { laguageChange() }, false);
+$(window).load(function () {
+    laguageChange()
+});
