@@ -21,22 +21,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/bootsnav.css">
 
-    <!-- xsslider slider css -->
-
-
-    <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
-
-
-
-
-    <!--For Plugins external css-->
-    <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-
-    <!--Theme custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
-
-    <!--Theme Responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -58,7 +43,6 @@
     </div>
     <!--End off Preloader -->
 
-
     <div class="culmn">
         <!--Home page style-->
 
@@ -67,17 +51,7 @@
             <div class="navbar-top bg-grey fix">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="navbar-callus text-left sm-text-center">
-                                <ul class="list-inline">
-                                    <li><a href="tel:00381652291293"><i class="fa fa-phone"></i> Telefon: +381 65 229
-                                            12 93</a></li>
-                                    <li><a href="mailto:vladimir.gasket@hotmail.com"><i class="fa fa-envelope-o"></i>
-                                            E-mail: vladimir.gasket@hotmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-offset-6 col-md-6">
                             <div class="navbar-socail text-right sm-text-center">
                                 <ul class="list-inline">
                                     <li class="no-padding-right" id="lang_en"><a onclick="setEN()"><i class="fa fa-language"></i></a></li>
@@ -103,12 +77,6 @@
 
 
             <div class="container">
-                <!-- <div class="attr-nav">
-                        <ul>
-                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>  -->
-
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -163,10 +131,7 @@
                                 </div><!-- End off slid item -->
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
                 <!--End off row-->
             </div>
@@ -191,10 +156,8 @@
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
-
-
-
                         <div class='carousel-inner' role='listbox'>
+
                             <?php 
 
                 $directory = "assets/productImages";
@@ -301,7 +264,7 @@
 
                         <div class="col-md-6">
                             <div class="business_item">
-                                <p id="onama"><b>Gasket</b>je porodična firma koja se bavi proizvodnjom ravnih zaptivki od svih
+                                <p id="onama"><b>Gasket</b> je porodična firma koja se bavi proizvodnjom ravnih zaptivki od svih
                                     nemetalnih zaptivnih materijala kao što su bezazbestni klingerit, guma, pluta,
                                     tehnička plastika (PE, PA, PTFE…), papir, itd. U svom proizvodnom pogonu
                                     raspolažemo sa CNC mašinama velikih razmera, laser mašinom kao i štanc presama sa
@@ -389,8 +352,6 @@
     <script src="assets/css/slick/slick.min.js"></script>
     <script src="assets/js/jquery.collapse.js"></script>
     <script src="assets/js/bootsnav.js"></script>
-
-
 
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
