@@ -1,11 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-<!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <title>Gasket</title>
@@ -86,7 +80,8 @@
                         <div class="col-md-6">
                             <div class="navbar-socail text-right sm-text-center">
                                 <ul class="list-inline">
-                                    <li class="no-padding-right"><a href="https://www.facebook.com/gasketrs/"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="no-padding-right" id="lang_en"><a onclick="setEN()"><i class="fa fa-language"></i></a></li>
+                                    <li class="no-padding-right" id="lang_rs"><a onclick="setRS()"><i class="fa fa-language"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -132,10 +127,10 @@
                 <!-- navbar menu -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Naslovna</a></li>
-                        <li><a href="#product">Galerija</a></li>
-                        <li><a href="#business">O nama</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#home" id="n_naslovna">Naslovna</a></li>
+                        <li><a href="#product" id="n_galerija">Galerija</a></li>
+                        <li><a href="#business" id="n_onama">O nama</a></li>
+                        <li><a href="#contact" id="n_kontakt">Kontakt</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -153,17 +148,17 @@
                             <div class="hello_slid">
                                 <div class="slid_item">
                                     <div class="home_text ">
-                                        <h1 class="text-gray">KVALITET</h1>
+                                        <h1 class="text-gray" id="kvalitet">KVALITET</h1>
                                     </div>
                                 </div><!-- End off slid item -->
                                 <div class="slid_item">
                                     <div class="home_text ">
-                                        <h1 class="text-gray">PROFESIONALNOST</h1>
+                                        <h1 class="text-gray" id="profesionalnost">PROFESIONALNOST</h1>
                                     </div>
                                 </div><!-- End off slid item -->
                                 <div class="slid_item">
                                     <div class="home_text ">
-                                        <h1 class="text-gray">TRADICIJA</h1>
+                                        <h1 class="text-gray" id="tradicija">TRADICIJA</h1>
                                     </div>
                                 </div><!-- End off slid item -->
                             </div>
@@ -186,7 +181,7 @@
             <div class="container">
                 <div class="main_product roomy-80">
                     <div class="head_title text-center fix">
-                        <h2 class="text-uppercase">Proizvodi</h2>
+                        <h2 class="text-uppercase" id="proizvodi">Proizvodi</h2>
                     </div>
 
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -220,16 +215,6 @@
                 echo "<div class='carousel-inner' role='listbox'>";
                 for($i=0;$i<$total;$i++)
                 {
-                //$handle = fopen("inputfile.txt", "r");
-            //	if ($handle) {
-                //	while (($line = fgets($handle)) !== false) {
-                        // process the line read.
-                //	}
-
-                //	fclose($handle);
-                //} else {
-                    // error opening the file.
-                //} 
                     if($i == 0)
                     {
                         echo "
@@ -316,7 +301,7 @@
 
                         <div class="col-md-6">
                             <div class="business_item">
-                                <p><b>Gasket </b>je porodična firma koja se bavi proizvodnjom ravnih zaptivki od svih
+                                <p id="onama"><b>Gasket</b>je porodična firma koja se bavi proizvodnjom ravnih zaptivki od svih
                                     nemetalnih zaptivnih materijala kao što su bezazbestni klingerit, guma, pluta,
                                     tehnička plastika (PE, PA, PTFE…), papir, itd. U svom proizvodnom pogonu
                                     raspolažemo sa CNC mašinama velikih razmera, laser mašinom kao i štanc presama sa
@@ -355,7 +340,7 @@
 
                 <div style="display: flex;">
                     <div class="footer-part">
-                        <div class="item_icon"><i class="fa fa-location-arrow"></i><span class="text-white" style="padding-left: 0.3em;">Lokacija:</span></div>
+                        <div class="item_icon"><i class="fa fa-location-arrow"></i><span class="text-white" style="padding-left: 0.3em;" id="lokacija">Lokacija:</span></div>
                         <div class="widget_ab_item_text">
                             <p>
                                 18000, Niš
@@ -363,13 +348,13 @@
                         </div>
                     </div>
                     <div class="footer-part">
-                        <div class="item_icon"><i class="fa fa-phone"></i><span class="text-white" style="padding-left: 0.3em;">Telefon:</span></div>
+                        <div class="item_icon"><i class="fa fa-phone"></i><span class="text-white" style="padding-left: 0.3em;" id="telefon">Telefon:</span></div>
                         <div class="widget_ab_item_text">
                             <p><a href="tel:00381652291293">+381 65 229 12 93</a></p>
                         </div>
                     </div>
                     <div class="footer-part">
-                        <div class="item_icon"><i class="fa fa-envelope-o"></i><span class="text-white" style="padding-left: 0.3em;">E=-mail:</span></div>
+                        <div class="item_icon"><i class="fa fa-envelope-o"></i><span class="text-white" style="padding-left: 0.3em;">E-mail:</span></div>
                         <div class="widget_ab_item_text">
                             <p><a href="mailto:vladimir.gasket@hotmail.com">vladimir.gasket@hotmail.com</a></p>
                         </div>
@@ -394,11 +379,10 @@
     </div>
 
     <!-- JS includes -->
-
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/language.js" type=""></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/css/slick/slick.js"></script>
